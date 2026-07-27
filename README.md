@@ -26,3 +26,7 @@ open index.html   # macOS
 - `index.html` – 페이지 구조
 - `style.css` – 스타일
 - `app.js` – 동작 로직
+
+## 기도편지 블로그
+
+`prayer-letters/` 폴더에 기도편지를 나누는 블로그 사이트가 별도로 있습니다. 사용법은 `prayer-letters/README.md`를 참고하세요.
