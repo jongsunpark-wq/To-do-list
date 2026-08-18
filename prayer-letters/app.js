@@ -185,6 +185,17 @@ function showDetail(post) {
   body.className = "post-detail-content";
   body.innerHTML = post.content || "";
 
+  body.querySelectorAll("img").forEach((img) => {
+    const src = img.getAttribute("src");
+    img.addEventListener("click", () => openLightbox(src));
+    img.addEventListener("error", () => {
+      const placeholder = document.createElement("div");
+      placeholder.className = "img-placeholder";
+      placeholder.textContent = "사진 준비중";
+      img.replaceWith(placeholder);
+    });
+  });
+
   detailContentEl.appendChild(header);
   detailContentEl.appendChild(body);
 
