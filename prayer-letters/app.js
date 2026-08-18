@@ -174,12 +174,7 @@ function showDetail(post) {
   const title = document.createElement("h2");
   title.textContent = post.title;
 
-  const date = document.createElement("span");
-  date.className = "post-date";
-  date.textContent = formatDate(post.date);
-
   header.appendChild(title);
-  header.appendChild(date);
 
   const body = document.createElement("div");
   body.className = "post-detail-content";

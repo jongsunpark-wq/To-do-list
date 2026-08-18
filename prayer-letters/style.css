@@ -45,8 +45,8 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Apple SD Gothic Neo", "Malgun Gothic", -apple-system,
-    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.75;
   letter-spacing: -0.1px;
 }
@@ -247,14 +247,10 @@ a {
 }
 
 .post-detail-header h2 {
-  margin: 0 0 8px;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.post-detail-header .post-date {
-  margin-bottom: 0;
-  display: block;
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1.3;
 }
 
 .post-detail-content {
@@ -277,6 +273,35 @@ a {
 .post-detail-content h4:nth-of-type(4n + 2) { color: var(--h-2); }
 .post-detail-content h4:nth-of-type(4n + 3) { color: var(--h-3); }
 .post-detail-content h4:nth-of-type(4n) { color: var(--h-4); }
+
+.post-detail-content blockquote.verse-quote {
+  background: var(--box-bg);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  margin: 0 0 24px;
+  padding: 18px 20px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--text);
+}
+
+.post-detail-content blockquote.verse-quote p {
+  margin: 0;
+}
+
+.post-detail-content blockquote.verse-quote .verse-ref {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.post-detail-content .meditation {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 
 .post-detail-content hr {
   border: none;
